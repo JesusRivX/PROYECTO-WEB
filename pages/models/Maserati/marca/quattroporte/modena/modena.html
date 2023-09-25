@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--cabecera-->
+    <header>
+        <a href="index.html"><img src="Logo-logo.png" alt="spectre" class="logo" /></a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="pages/About-us/about us.html" style="--i:1;">NOSOTROS</a>
+            <a href="pages/models/index.html" style="--i:2;">MODELOS</a>
+            <a href="pages/contact/contacto.html" style="--i:3;">CONTACTO</a>
+            <a href="pages/register/Login & registration/index.html" style="--i:4;">INICIAR SESION</a>
+        </nav>
+    </header>
+
+    <!--main-content-->
+    <div class="maincont">
+        <div class="main">
+            <div class="main-image" style="background-image: url(modena.jpg);">
+                <img src="logo-maserati.png" alt="ferrari" style="width: 120px; transform: translate(-45px, 10px);">
+                <div class="main-text">
+                    <h1>QUATTROPORTE</h1>
+                    <h2>MODENA</h2>
+                </div>
+            </div>
+        </div> 
+    </div>
+    
+    <div class="buttons">
+        <a href="#titulo"><button><i class="fa-solid fa-angles-down"></i></button></a>
+    </div>
+
+    <section class="conteiner">
+        <img id="titulo" class="img1" src="img1.jpg" alt="car">
+        <p class="title1">EXTERIOR</p>
+        <p class="text1">
+            El exterior del Trofeo presenta una serie de mejoras aerodinámicas, como un nuevo parachoques 
+            delantero, faldones laterales y un difusor trasero. Además, cuenta con llantas de aleación de 
+            21 pulgadas y cuatro tubos de escape.</p>
+
+        <p class="title2">VISIÓN GENERAL</p>
+        <p class="text2">
+            El Maserati Quattroporte Trofeo es una berlina de lujo que ofrece un rendimiento excepcional. 
+            Con un motor V8 de gasolina de 580 CV, el Trofeo es el 
+            Quattroporte más rápido y potente hasta la fecha.</p>
+        <img class="img2" src="img2.jpg" alt="car">
+        <img class="img3" src="img3.jpg" alt="car">
+        <img class="img5" src="img5.jpg" alt="car">
+        <img class="img4" src="img4.jpg" alt="car">
+        <p class="title3">INTERIOR</p>
+        <p class="text3">
+            El interior del Trofeo es igualmente impresionante. Los asientos deportivos están tapizados 
+            en cuero natural Pieno Fiore y cuentan con costuras en contraste. El volante deportivo 
+            también está forrado en cuero y cuenta con levas de cambio de aluminio. El panel de 
+            instrumentos digital de 12,3 pulgadas proporciona información clara y detallada 
+            sobre el rendimiento del vehículo.</p>
+    </section>
+    
+    <section class="car-stats">
+        <div class="stats">
+            <div>
+                <h1 class="counter" data-target="5.02" data-speed="500">0</h1>
+                <h1>Metros</h1>
+                <h5>Longitud</h5>
+            </div>
+            <div>
+                <h1 class="counter" data-target="1.69" data-speed="1300">0</h1>
+                <h1>Metros</h1>
+                <h5>Altura</h5>
+            </div>
+            <div>
+                <h1 class="counter" data-target="2.15" data-speed="800">0</h1>
+                <h1>Metros</h1>
+                <h5>Anchura</h5>
+            </div>
+        </div>
+    </section>
+
+    <section class="specs">
+        <div>
+            <div class="specs-header">
+                <h2>Especificaciones Técnicas</h2>
+            </div>
+            <ul>
+                <li>
+                    <span>POTENCIA MÁXIMA</span>
+                    <span>430 CV</span>
+                </li>
+                <li>
+                    <span>VELOCIDAD MÁXIMA</span>
+                    <span>288 km/h</span>
+                </li>
+                <li>
+                    <span>ACELERACIÓN 0-100 KM/H</span>
+                    <span>5,0 s</span>
+                </li>
+                <li>
+                    <span>ESQUEMA DE MOTOR</span>
+                    <span>V6</span>
+                </li>
+                <li>
+                    <span>TRACCIÓN</span>
+                    <span>RWD</span>
+                </li>
+                <li>
+                    <span>TORQUE MÁXIMO</span>
+                    <span>580 Nm</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <img src="imag1.jpg">
+                </div>
+                <div class="item">
+                    <img src="imag2.jpg">
+                </div>
+                <div class="item">
+                    <img src="imag3.webp">
+                </div>
+                <div class="item">
+                    <img src="imag4.jpg">
+                </div>
+                <div class="item">
+                    <img src="imag5.jpg">
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev">></button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="content-footer">
+            <div class="content-foo">
+                <h3 class="ready">PODER</h3><h3 class="for">EN LA 
+                    PROXIMA ACELERACIÓN</h3>
+            </div>
+        </div>
+
+        <div class="apps">
+            <div class="sub-apps">
+                <a href="#" class="facebook">
+                    <i class="fa-brands fa-facebook" style="color: #fff;"></i>   
+                </a>
+
+                <a href="#" class="twitter">
+                    <i class="fa-brands fa-twitter" style="color: #fff;"></i>
+                </a>
+   
+                <a href="#" class="instagram">
+                    <i class="fa-brands fa-instagram" style="color: #fff;"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="line">
+            <hr>
+        </div>
+
+        <div class="logo1">
+            <div class="container-logo">
+                <img src="Logo-logo.png" class="logo2">
+            </div>
+        </div>
+
+        <div class="content-privacy">
+            <ul>
+                <li>
+                    <a class="mazda">© 2023 SPECTRE PERÚ. ALL RIGHTS RESERVED.</a>
+                </li>
+                
+                <li>
+                    <a class="policy">Privacy policy</a>
+                </li>
+
+                <li>
+                    <a class="Terms">Terms & Conditions </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

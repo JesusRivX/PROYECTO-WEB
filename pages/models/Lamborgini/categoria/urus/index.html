@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+        <!--Cabecera-->
+        <header>
+            <img src="Logo-logo.png" alt="spectre" class="logo" />
+    
+            <input type="checkbox" id="check">
+            <label for="check" class="icons">
+                <i class='bx bx-menu' id="menu-icon"></i>
+                <i class='bx bx-x' id="close-icon"></i>
+            </label>
+            
+            <nav class="navbar">
+                <a href="pages/About-us/about us.html" style="--i:1;">NOSOTROS</a>
+                <a href="pages/models/index.html" style="--i:2;">MODELOS</a>
+                <a href="pages/contact/contacto.html" style="--i:3;">CONTACTO</a>
+                <a href="pages/register/Login & registration/index.html" style="--i:4;">INICIAR SESION</a>
+            </nav>
+        </header>
+
+        <!--Marca - Logo-->
+        <div class="logo2">
+            <img src="logo-lambo.png" alt="lambo" class="logo-lambo">
+        </div>
+
+        
+        <!--Contenedor-->
+        <div id="slide">
+
+            <!--Carro1-->
+            <div class="item">
+                <div class="image">
+                    <img src="s.webp">
+                </div>
+                <div class="content">
+                    <div class="left">
+                        <h1>URUS</h1>
+                        <h1>S</h1>
+                        <div class="des">El Lamborghini Urus S es un SUV de alto rendimiento que combina la emoción de conducir un automóvil deportivo con la versatilidad y el espacio de un vehículo utilitario deportivo.</div>
+                        <a href="../../marca/huracan/evo spider/evo.html">DESCRIPCIÓN GENERAL
+                            <i class="fa-solid fa-angle-right"></i>
+                            <i class="fa-solid fa-angle-right"></i>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                    </div>
+                    <div class="right">
+                        <h2>PROPIEDADES</h2>
+                        <ul>
+                            <li>
+                                <p>POTENCIA</p>
+                                <p>640 CV</p>
+                            </li>
+                            <li>
+                                <p>VELOCIDAD</p>
+                                <p>325 KM/H</p>
+                            </li>
+                            <li>
+                                <p>0-100 KM/H</p>
+                                <p>3,1 s</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--Carro2-->
+            <div class="item">
+                <div class="image">
+                    <img src="performante.webp">
+                </div>
+                <div class="content">
+                    <div class="left">
+                        <h1>URUS</h1>
+                        <h1>PERFORMANTE</h1>
+                        <div class="des">El Urus Performante es un vehículo superdeportivo por excelencia, con proporciones que reflejan las de un vehículo superdeportivo.</div>
+                        <a href="../../marca/huracan/tecnica/tecnica.html">DESCRIPCIÓN GENERAL
+                            <i class="fa-solid fa-angle-right"></i>
+                            <i class="fa-solid fa-angle-right"></i>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                    </div>
+                    <div class="right">
+                        <h2>PROPIEDADES</h2>
+                        <ul>
+                            <li>
+                                <p>POTENCIA</p>
+                                <p>640 CV</p>
+                            </li>
+                            <li>
+                                <p>VELOCIDAD</p>
+                                <p>325 KM/H</p>
+                            </li>
+                            <li>
+                                <p>0-100 KM/H</p>
+                                <p>3,2 s</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>               
+        </div>
+        <div class="directional">
+            <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+            <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.pkgd.min.js"></script>
+    <script>
+        const menuHamburguer = document.querySelector(".menu-hamburguer");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuHamburguer.addEventListener('click', () => {
+        navLinks.classList.toggle('mobile-menu');
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

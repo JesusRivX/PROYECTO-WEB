@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--cabecera-->
+    <header>
+        <a href="index.html"><img src="Logo-logo.png" alt="spectre" class="logo" /></a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="pages/About-us/about us.html" style="--i:1;">NOSOTROS</a>
+            <a href="pages/models/index.html" style="--i:2;">MODELOS</a>
+            <a href="pages/contact/contacto.html" style="--i:3;">CONTACTO</a>
+            <a href="pages/register/Login & registration/index.html" style="--i:4;">INICIAR SESION</a>
+        </nav>
+    </header>
+
+    <!--main-content-->
+    <div class="maincont">
+        <div class="main">
+            <div class="main-image" style="background-image: url(monza.jpg);">
+                <img src="Logo-ferrari.png" alt="ferrari" style="width: 100px; transform: translate(-20px, 10px);">
+                <div class="main-text">
+                    <h1>FERRARI</h1>
+                    <h2>MONZA SP1 & SP2</h2>
+                </div>
+            </div>
+        </div> 
+    </div>
+    
+    <div class="buttons">
+        <a href="#titulo"><button><i class="fa-solid fa-angles-down"></i></button></a>
+    </div>
+
+    <section class="conteiner">
+        <img id="titulo" class="img1" src="img1.jpg" alt="car">
+        <p class="title1">EXTERIOR</p>
+        <p class="text1">
+            Las carreras siempre han influido mucho en el lenguaje de diseño de Ferrari 
+            y el Monza SP1 & SP2 está vinculado al glorioso pasado de la marca por un vínculo 
+            invisible. De hecho, su diseño encarna la elegancia, el rendimiento y la 
+            innovación que son una parte tan intrínseca del pasado y presente de Ferrari.</p>
+
+        <p class="title2">VISIÓN GENERAL</p>
+        <p class="text2">
+            El Ferrari Monza SP1, junto con el Monza SP2, son los precursores de un nuevo concepto, 
+            conocido como 'Icona' (Icono), que aprovecha un leitmotiv de los coches más evocadores 
+            de la historia de la compañía para crear un nuevo segmento de ediciones especiales limitadas. 
+            Coches de serie para clientes y coleccionistas. La intención es utilizar una estética moderna 
+            para reinterpretar un estilo atemporal, con componentes tecnológicamente avanzados y el mayor 
+            rendimiento posible a través de la innovación continua.</p>
+        <img class="img2" src="img2.jpg" alt="car">
+        <img class="img3" src="img3.jpg " alt="car">
+        <img class="img5" src="img5.jpg" alt="car">
+        <img class="img4" src="img4.jpg" alt="car">
+        <p class="title3">INTERIOR</p>
+        <p class="text3">
+            El desarrollo del diseño del interior se centró específicamente en el puesto de conducción. Los 
+            instrumentos, el grupo de instrumentos y la estructura de los asientos necesitaban un 
+            replanteamiento funcional para satisfacer las nuevas necesidades del conductor.</p>
+    </section>
+    
+    <section class="car-stats">
+        <div class="stats">
+            <div>
+                <h1 class="counter" data-target="4.65" data-speed="500">0</h1>
+                <h1>Metros</h1>
+                <h5>Longitud</h5>
+            </div>
+            <div>
+                <h1 class="counter" data-target="1.15" data-speed="1300">0</h1>
+                <h1>Metros</h1>
+                <h5>Altura</h5>
+            </div>
+            <div>
+                <h1 class="counter" data-target="1.99" data-speed="800">0</h1>
+                <h1>Metros</h1>
+                <h5>Anchura</h5>
+            </div>
+        </div>
+    </section>
+
+    <section class="specs">
+        <div>
+            <div class="specs-header">
+                <h2>Especificaciones Técnicas</h2>
+            </div>
+            <ul>
+                <li>
+                    <span>CILINDRADA</span>
+                    <span>3.990 cm³</span>
+                </li>
+                <li>
+                    <span>POTENCIA MÁXIMA (KW/CV)</span>
+                    <span>810 CV (596kW) @ 8.500 rpm</span>
+                </li>
+                <li>
+                    <span>VELOCIDAD MÁXIMA</span>
+                    <span>>300 km/h</span>
+                </li>
+                <li>
+                    <span>ACELERACIÓN 0-100 KM/H</span>
+                    <span>2.9 s</span>
+                </li>
+                <li>
+                    <span>CONSUMO COMBINADO</span>
+                    <span>13,8 l/100 km (WLTP)</span>
+                </li>
+                <li>
+                    <span>EMISIONES DE CO2 COMBINADO</span>
+                    <span>313 g/km (WLTP)</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <img src="imag1.jpg">
+                </div>
+                <div class="item">
+                    <img src="imag2.jpg">
+                </div>
+                <div class="item">
+                    <img src="imag3.jpg">
+                </div>
+                <div class="item">
+                    <img src="imag4.jpg">
+                </div>
+                <div class="item">
+                    <img src="imag5.jpg">
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev">></button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="content-footer">
+            <div class="content-foo">
+                <h3 class="ready">PODER</h3><h3 class="for">EN LA 
+                    PROXIMA ACELERACIÓN</h3>
+            </div>
+        </div>
+
+        <div class="apps">
+            <div class="sub-apps">
+                <a href="#" class="facebook">
+                    <i class="fa-brands fa-facebook" style="color: #fff;"></i>   
+                </a>
+
+                <a href="#" class="twitter">
+                    <i class="fa-brands fa-twitter" style="color: #fff;"></i>
+                </a>
+   
+                <a href="#" class="instagram">
+                    <i class="fa-brands fa-instagram" style="color: #fff;"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="line">
+            <hr>
+        </div>
+
+        <div class="logo1">
+            <div class="container-logo">
+                <img src="Logo-logo.png" class="logo2">
+            </div>
+        </div>
+
+        <div class="content-privacy">
+            <ul>
+                <li>
+                    <a class="mazda">© 2023 SPECTRE PERÚ. ALL RIGHTS RESERVED.</a>
+                </li>
+                
+                <li>
+                    <a class="policy">Privacy policy</a>
+                </li>
+
+                <li>
+                    <a class="Terms">Terms & Conditions </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="/index.html"><img src="Logo-logo.png" alt="spectre" class="logo" /></a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="index.html" style="--i:0;">INICIO</a>
+            <a href="pages/About-us/about us.html" style="--i:1;">NOSOTROS</a>
+            <a href="pages/models/index.html" style="--i:2;">MODELOS</a>
+            <a href="pages/contact/contacto.html" style="--i:3;">CONTACTO</a>
+            <a href="pages/register/Login & registration/index.html" style="--i:4;">INICIAR SESION</a>
+        </nav>
+    </header>
+
+    <!--main-content-->
+    <div class="maincont">
+        <div class="main">
+            <div class="main-image" style="background-image: url(lambo.jpg);">
+                <img src="logo-lambo.png" alt="ferrari" style="width: 50px; transform: translate(-5px, 5px);">
+                <div class="main-text">
+                    <h2>LAMBORGHINI</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Second-Content-->
+    <div class="contmain">
+        <div class="container">
+            <div id="slide">
+                <div class="item" style="background-image: url(huracan.jpg);">
+                    <div class="content">   
+                        <div class="name">URUS</div>
+                        <div class="des">Descubre el Lamborghini Urus, SUV que fusiona diseño agresivo con 
+                            motor V8 twin-turbo. Acelera en segundos y ofrece lujo y tecnología en el interior. 
+                            Tracción en las cuatro ruedas y modos de conducción personalizables garantizan 
+                            desempeño excepcional en cualquier terreno. La perfecta fusión de elegancia y 
+                            potencia en el Lamborghini Urus.</div>
+                        <a href="">
+                            <button>VER MAS</button>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="item" style="background-image: url(concept.jpeg);">
+                    <div class="content">   
+                        <div class="name">HURACÁN</div>
+                        <div class="des">El Lamborghini Huracán personifica la fusión ideal de 
+                            potencia y elegancia. Motor V10 para una aceleración impresionante.
+                            Diseño aerodinámico que mejora el rendimiento. Experimenta la emoción 
+                            de conducir un Huracán y redefine velocidad y sofisticación.</div>
+                        <a href="./categoria/huracan/index.html">
+                            <button>VER MAS</button>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="item" style="background-image: url(revuelto.jpeg);">
+                    <div class="content">   
+                        <div class="name">CONCEPT</div>
+                        <div class="des">Sumérgete en la visión vanguardista de Lamborghini con su 
+                            asombroso modelo concepto. Fusiona formas vanguardistas y tecnologías 
+                            innovadoras para redefinir la excelencia. Anticipa la evolución del 
+                            diseño y la ingeniería en superdeportivos, ofreciendo un emocionante 
+                            vistazo al futuro del rendimiento automotriz con Lamborghini.</div>
+                        <a href="#">
+                            <button>VER MAS</button>
+                        </a>
+
+                    </div>
+                </div>
+    
+                <div class="item" style="background-image: url(serie.jpg);">
+                    <div class="content">   
+                        <div class="name">REVUELTO</div>
+                        <div class="des">
+                            Imagina el Lamborghini Revuelto, que captura emoción y rendimiento en su 
+                            forma más pura. Combinando Aventador y Huracán, sobrepasa límites. 
+                            Diseño que une lo mejor, motor que desafía expectativas, es la 
+                            expresión definitiva de la pasión automotriz Lamborghini.</div>
+                        <a href="/pages/models/Lamborgini/marca/revuelto/revuelto.html">
+                            <button>VER MAS</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="item" style="background-image: url(urus.png);">
+                    <div class="content">   
+                        <div class="name">SERIE LIMITADA</div>
+                        <div class="des">Descubre exclusividad y potencia en la serie limitada de Lamborghini. 
+                            Modelos únicos para afortunados entusiastas. Rendimiento incomparable y 
+                            detalles personalizados redefinen la excelencia. Sumérgete en lujo e 
+                            innovación con ediciones limitadas, donde el auto es arte inigualable.</div>
+                        <a href="#">
+                            <button>VER MAS</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+                <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div>
+        
+    </div>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="content-footer">
+            <div class="content-foo">
+                <h3 class="ready">PODER</h3><h3 class="for">EN LA 
+                    PROXIMA ACELERACIÓN</h3>
+            </div>
+        </div>
+
+        <div class="apps">
+            <div class="sub-apps">
+                <a href="#" class="facebook">
+                    <i class="fa-brands fa-facebook" style="color: #fff;"></i>   
+                </a>
+
+                <a href="#" class="twitter">
+                    <i class="fa-brands fa-twitter" style="color: #fff;"></i>
+                </a>
+   
+                <a href="#" class="instagram">
+                    <i class="fa-brands fa-instagram" style="color: #fff;"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="line">
+            <hr>
+        </div>
+
+        <div class="logo1">
+            <div class="container-logo">
+                <img src="imagenes/Logo-logo.png" class="logo2">
+            </div>
+        </div>
+
+        <div class="content-privacy">
+            <ul>
+                <li>
+                    <a class="mazda">© 2023 SPECTRE PERÚ. ALL RIGHTS RESERVED.</a>
+                </li>
+                
+                <li>
+                    <a class="policy">PRIVACY POLICY</a>
+                </li>
+
+                <li>
+                    <a class="Terms">TERMS & CONDITIONS</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

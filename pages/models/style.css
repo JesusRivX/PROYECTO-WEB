@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Roboto&family=Spectral+SC:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Roboto&family=Spectral+SC:wght@300&family=Spectral:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&family=Spectral+SC:wght@300&family=Spectral:wght@300&display=swap');
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    background-image: url(imagenes-modelos/wallapaper3.jpg);
+    overflow-x: hidden;
+    background-size: cover;
+    display: abosolute;
+}
+
+/*Primer acto*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, .1);
+    backdrop-filter: blur(50px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    z-index: -1;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+    transition: .5s;
+}
+
+header:hover::after {
+    left: 100%;
+}
+
+.logo{
+    width: 100px;
+}
+
+.navbar a {
+    font-size: 1.15rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 3rem;
+}
+
+ #check {
+    display: none;
+ }
+
+.icons {
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* BREAKPOINTS */
+@media (max-width: 992px) {
+    header {
+        padding: 1.3rem 5%;
+    }
+}
+
+@media (max-width: 948px){
+    .icons {
+        display: inline-flex;
+    }
+
+    #check:checked~.icons #menu-icon {
+        display: none;
+    }
+
+    .icons #close-icon {
+        display: none;
+    }
+
+    #check:checked~.icons #close-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: rgba(0, 0, 0, .1);
+        backdrop-filter: blur(50px);
+        overflow: hidden;
+        transition: .3s ease;
+    }
+
+    #check:checked~.navbar {
+        height: 17.7rem;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: .3s ease;
+    }
+
+    #check:checked~.navbar a {
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay: calc(.15s * var(--i));
+    }
+
+}
+
+/*-----------------Acto Principal------------*/
+.bg-cont{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: abosolute;
+    
+}
+
+.container{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container figure{
+    position: relative;
+    height: 250px;
+    width: 350px;
+    padding: 5px;
+    margin: 120px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+}
+
+.container figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+    background-size: cover;
+}
+.container figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: hidden;
+}
+
+.container figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+

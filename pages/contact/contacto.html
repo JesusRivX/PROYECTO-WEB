@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de contacto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.min.css">
+    <link rel="stylesheet" href="contacto.css">
+    <script src="https://kit.fontawesome.com/b408879b64.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <!--cabecera-->
+    <header>
+        <a href="../../index.html"><img src="img/Logo-logo.png" alt="spectre" class="logo" /></a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="../../index.html" style="--i:0;">INICIO</a>
+            <a href="../About-us/about us.html" style="--i:1;">NOSOTROS</a>
+            <a href="../models/index.html" style="--i:2;">MODELOS</a>
+            <a href="../contact/contacto.html" style="--i:3;">CONTACTO</a>
+            <a href="../register/Login & registration/index.html" style="--i:4;">INICIAR SESION</a>
+        </nav>
+    </header>
+
+    <!--formulario-->
+    <div class="container">
+        <div class="box-info">
+            <h1>CONTÁCTATE CON NOSOTROS</h1>
+            <div class="data">
+                <p><i class="fa-solid fa-phone"></i> +51 956 789 123</p>
+                <p><i class="fa-solid fa-envelope"></i> spectre123@gmail.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> La Molina, Lima, Perú</p>
+            </div>
+            <div class="links">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <form>
+            <div class="input-box">
+                <input type="text" placeholder="Nombre y apellido" required>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="email" required placeholder="Correo electrónico">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Asunto">
+                <i class="fa-solid fa-pen-to-square"></i>
+            </div>
+            <div class="input-box">
+                <select name="javier" id="tomas">
+                    <option value="Cotizacion de unidad" selected="selected" data-v-3bd5dfdc>Cotizacion de unidad</option>
+                    <option value="Cotizacion de repuesto" data-v-3bd5dfdc>Cotizacion de repuesto</option>
+                    <option value="Agendamiento de cita" data-v-3bd5dfdc>Agendamiento de cita</option>
+                    <option value="Consulta o sugerencia" data-v-3bd5dfdc>Consulta o sugerencia</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <textarea placeholder="Escribe tu mensaje..."></textarea>
+            </div>
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </div>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="content-footer">
+            <div class="content-foo">
+                <h3 class="ready">POWER</h3><h3 class="for">IN THE 
+                    NEXT ACCELERATION</h3>
+            </div>
+        </div>
+
+        <div class="apps">
+            <div class="sub-apps">
+                <a href="#" class="facebook">
+                    <i class="fa-brands fa-facebook" style="color: #fff;"></i>   
+                </a>
+
+                <a href="#" class="twitter">
+                    <i class="fa-brands fa-twitter" style="color: #fff;"></i>
+                </a>
+   
+                <a href="#" class="instagram">
+                    <i class="fa-brands fa-instagram" style="color: #fff;"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="line">
+            <hr>
+        </div>
+
+        <div class="logo1">
+            <div class="container-logo">
+                <img src="img/Logo-logo.png" class="logo2">
+            </div>
+        </div>
+
+        <div class="content-privacy">
+            <ul>
+                <li>
+                    <a class="mazda">© 2023 SPECTRA PERÚ. ALL RIGHTS RESERVED.</a>
+                </li>
+                
+                <li>
+                    <a class="policy">Privacy policy</a>
+                </li>
+
+                <li>
+                    <a class="Terms">Terms & Conditions </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    
+    
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.pkgd.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

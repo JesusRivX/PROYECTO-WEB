@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--cabecera-->
+    <header>
+        <a href="index.html"><img src="Logo-logo.png" alt="spectre" class="logo" /></a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="pages/About-us/about us.html" style="--i:1;">NOSOTROS</a>
+            <a href="pages/models/index.html" style="--i:2;">MODELOS</a>
+            <a href="pages/contact/contacto.html" style="--i:3;">CONTACTO</a>
+            <a href="pages/register/Login & registration/index.html" style="--i:4;">INICIAR SESION</a>
+        </nav>
+    </header>
+
+    <!--main-content-->
+    <div class="maincont">
+        <div class="main">
+            <div class="main-image" style="background-image: url(asterio.jpg);">
+                <img src="logo-lambo.png" alt="ferrari" style="width: 50px; transform: translate(10px, 10px);">
+                <div class="main-text">
+                    <h1>CONCEPT CAR</h1>
+                    <h2>ASTERION</h2>
+                </div>
+            </div>
+        </div> 
+    </div>
+    
+    <div class="buttons">
+        <a href="#titulo"><button><i class="fa-solid fa-angles-down"></i></button></a>
+    </div>
+
+    <section class="conteiner">
+        <img id="titulo" class="img1" src="img1.webp" alt="car">
+        <p class="title1">EXTERIOR</p>
+        <p class="text1">
+            El Asterion lleva consigo los detalles estilísticos y las soluciones de ingeniería 
+            avanzada que caracterizan a Lamborghini, integrándolos con una innovadora tecnología 
+            híbrida: para el Asterion, Lamborghini ha apostado por el híbrido Plug-in (PHEV). 
+            Gracias a esta elección, se puede disfrutar de la potencia derivada del sistema 
+            eléctrico para la conducción en ciudad, mientras que si se está buscando la emoción, 
+            el empuje del motor aspirado Lamborghini garantiza una experiencia de conducción sin precedentes.</p>
+
+        <p class="title2">VISIÓN GENERAL</p>
+        <p class="text2">
+            El Lamborghini Asterion es un coche único, que explora territorios completamente 
+            nuevos y desconocidos con un diseño sinuoso y sensual. El lujo y la elegancia 
+            ocupan un lugar central en la experiencia de conducción del Asterion, como demuestra 
+            el uso de materiales especiales tales como el aluminio, la fibra de carbono forjada y el titanio.</p>
+        <img class="img2" src="img3.webp" alt="car">
+        <img class="img3" src="img2.jpg" alt="car">
+        <img class="img5" src="img5.jpg" alt="car">
+        <img class="img4" src="img4.webp" alt="car">
+        <p class="title3">INTERIOR</p>
+        <p class="text3">
+            El auto tiene un diseño anguloso y tiene un monocasco de fibra de carbono 
+            tomado de Aventador junto con paneles de plástico compuesto de fibra de carbono. 
+            El interior tiene un diseño minimalista, tapicería de cuero color marfil y un 
+            borde de fibra de carbono, aluminio y titanio con los asientos colocados más altos 
+            y el parabrisas más vertical que los modelos tradicionales de Lamborghini para 
+            brindar mayor comodidad, lo que significa la gran naturaleza de turismo del automóvil.</p>
+    </section>
+    
+    <section class="car-stats">
+        <div class="stats">
+            <div>
+                <h1 class="counter" data-target="4.70" data-speed="500">0</h1>
+                <h1>Metros</h1>
+                <h5>Longitud</h5>
+            </div>
+            <div>
+                <h1 class="counter" data-target="1.25" data-speed="1300">0</h1>
+                <h1>Metros</h1>
+                <h5>Altura</h5>
+            </div>
+            <div>
+                <h1 class="counter" data-target="2.18" data-speed="800">0</h1>
+                <h1>Metros</h1>
+                <h5>Anchura</h5>
+            </div>
+        </div>
+    </section>
+
+    <section class="specs">
+        <div>
+            <div class="specs-header">
+                <h2>Especificaciones Técnicas</h2>
+            </div>
+            <ul>
+                <li>
+                    <span>CILINDRADA</span>
+                    <span>5,204 cm³ (317.6 cu.in.)</span>
+                </li>
+                <li>
+                    <span>POTENCIA MÁXIMA (KW/CV)</span>
+                    <span>5,204 cm³ (317.6 cu.in.)</span>
+                </li>
+                <li>
+                    <span>VELOCIDAD MÁXIMA</span>
+                    <span>320 km/h (199 mph)</span>
+                </li>
+                <li>
+                    <span>ACELERACIÓN 0-100 KM/H</span>
+                    <span>3,0 s</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <img src="imag1.webp">
+                </div>
+                <div class="item">
+                    <img src="imag2.jpg">
+                </div>
+                <div class="item">
+                    <img src="imag3.jpg">
+                </div>
+                <div class="item">
+                    <img src="imag4.jpg">
+                </div>
+                <div class="item">
+                    <img src="imag5.jpg">
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev">></button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="content-footer">
+            <div class="content-foo">
+                <h3 class="ready">PODER</h3><h3 class="for">EN LA 
+                    PROXIMA ACELERACIÓN</h3>
+            </div>
+        </div>
+
+        <div class="apps">
+            <div class="sub-apps">
+                <a href="#" class="facebook">
+                    <i class="fa-brands fa-facebook" style="color: #fff;"></i>   
+                </a>
+
+                <a href="#" class="twitter">
+                    <i class="fa-brands fa-twitter" style="color: #fff;"></i>
+                </a>
+   
+                <a href="#" class="instagram">
+                    <i class="fa-brands fa-instagram" style="color: #fff;"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="line">
+            <hr>
+        </div>
+
+        <div class="logo1">
+            <div class="container-logo">
+                <img src="Logo-logo.png" class="logo2">
+            </div>
+        </div>
+
+        <div class="content-privacy">
+            <ul>
+                <li>
+                    <a class="mazda">© 2023 SPECTRE PERÚ. ALL RIGHTS RESERVED.</a>
+                </li>
+                
+                <li>
+                    <a class="policy">Privacy policy</a>
+                </li>
+
+                <li>
+                    <a class="Terms">Terms & Conditions </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
